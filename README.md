@@ -31,9 +31,12 @@ Replace <target> with the IP address or hostname of the target you want to scan.
 
 Nmap provides a variety of parameters that allow you to customize the port scanning behavior. The nmapx script supports the following parameters, which you can modify within the script:
 
-    MIN_RATE: Minimum rate of packets sent per second. This controls the speed of the scan. The default value is 5000.
-    TIMING: Timing template for the scan. The timing templates range from T0 (paranoid) to T5 (insane). The default value is T4, which provides a balance between scan speed and reliability.
-    OPTIONS: Additional Nmap options for the scan. You can specify any valid Nmap options here. The default value is -sCV, which enables service/version detection and default script scanning.
+    MIN_RATE: Minimum rate of packets sent per second. This controls the speed of the scan. 
+    The default value is 5000.
+    TIMING: Timing template for the scan. The timing templates range from T0 (paranoid) to T5 (insane). 
+    The default value is T4, which provides a balance between scan speed and reliability.
+    OPTIONS: Additional Nmap options for the scan. You can specify any valid Nmap options here. 
+    The default value is -sCV, which enables service/version detection and default script scanning.
 
 Feel free to modify these parameters in the script to suit your specific scanning requirements.
 
