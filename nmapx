@@ -1,2 +1,2 @@
 #!/bin/bash
-export target=$1; nmap --min-rate=5000 -T4 -p$(nmap -Pn -T4 $target | grep '^[0-9]' | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//) -sCV $target | tee nmap.txt; echo "Scan saved to $(pwd)/nmap.txt"
+export target=$1; nmap --min-rate=5000 -T4 -Pn -sT -p$(nmap -sT -Pn -T4 $target | grep '^[0-9]' | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//) -sCV $target | tee nmap.txt
